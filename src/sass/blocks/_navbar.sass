@@ -8,19 +8,24 @@
   &__contact
     display: flex
     flex-direction: column
-    aling-items: center
+    align-items: center
     text-align: right
+  &__address
+    font-size: 13px
+    +reg
   &__info
     display: flex
     align-items: center
   &__button
     margin-left: 30px
+    font-size: 13px
+    +bold
   &__phone
     color: $text-color
     font-style: 20px
-    font-weight: 400
-    text-decoration: 
+    text-decoration: none
     margin-top: 10px
+    +bold
 @media(max-width: 768px)
   .navbar
     &__contact

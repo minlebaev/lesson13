@@ -5,17 +5,17 @@
 
   &-text
     flex-basis: 50%
-    padding-right: 139px
+    padding-right: 79px
     &__title
       font-size: 41px
-      font-weight: 400
       line-height: 55px
       margin-bottom: 40px
+      +bold
     &__subtitle
       font-size: 20px
-      font-weight: 400
       margin-bottom: 69px
       display: inline-block
+      +bold
   &-list
     margin: 0
     padding: 0
@@ -34,6 +34,8 @@
       margin-right: 25px
     &__text
       max-width: 300px
+      font-size: 14px
+      +reg
 @media(max-width: 1200px)
   .hero
     &-block
