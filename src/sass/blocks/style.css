@@ -1,3 +1,35 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 @font-face {
   font-family: 'Museo Sans 300';
   src: url("../../fonts/MuseoSansCirl/MuseoSansCyrl-300.eot");
@@ -369,6 +401,21 @@ img {
     text-decoration: none;
     font-family: 'Museo Sans 700', sans-serif;
     font-weight: 700;
+  }
+  .offer-block {
+    padding-right: 35px;
+  }
+  .offer__text-left {
+    margin-right: 43px;
+  }
+  .offer-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__text-bottom {
+    display: block;
   }
 }
 
