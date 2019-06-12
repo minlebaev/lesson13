@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="sass/blocks/style.css">
-    <title>lesson 19 </title>
+    <title>lesson 22 </title>
 </head>
 <body>
     <nav class="navbar">
@@ -58,7 +58,7 @@
                         </ul>
                     </div>
                     <div class="hero-image">
-                        <img src="img/hero_image.jpg" alt="План квартиры">
+                        <img class="hero-image__img" src="img/hero_image.jpg" alt="План квартиры">
                     </div>
                 </div>
             </div>
@@ -228,6 +228,44 @@
                 </div>
         </div>
     </section>
+    <footer class="footer"> 
+        <div class="map" id="map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aca40950c12e75298be9c4f55cdea0161b54ce8dd4632647e85c615d379166e05&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+        <div class="container red">
+            <div class="contacts-block">
+                <div class="contacts">
+                    <h3 class="contacts__title">
+                        Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта
+                    </h3>
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img class="img-fluid" src="img/footer/map.png" alt="">
+                            </span>
+                            <span class="contacts-list__text">
+                                г. Москва <br><span class="contacts-list__bold">ул. Ленинга, д. 10, корпус 2, оф. 308</span>
+                            </span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img class="img-fluid" src="img/footer/clock.png" alt=""></span>
+                            <span class="contacts-list__text">Режим работы: <br>
+                                <span class="contacts-list__bold">с 9:00 до 18:00</span>    
+                            </span>
+                        </li>
+                        <li class="contacts-list__item">
+                            <span class="contacts-list__icon">
+                                <img class="img-fluid" src="img/footer/phone.png" alt=""></span>
+                            <span class="contacts-list__text">Телефон: <br>
+                            <a class="contacts-list__bold offer__text-bottom" href="tel:+7(495)42-251-31">+ 7 (495) 42-251-31</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> 
     <div class="modal" id="modal">
         <div class="modal-dialog">
             <button class="modal-dialog__close" id="close">

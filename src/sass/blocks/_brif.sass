@@ -44,7 +44,7 @@
       display: inline-block
       text-align: center
       line-height: 35px
-      width: 35px
+      min-width: 35px
       height: 35px
       border: 2px solid $text-color
       margin-right: 30px
@@ -66,14 +66,26 @@
     display: block
     margin-bottom: 93px
 .error
-  display: inline-block
+  display: block
+  margin-bottom: 16px
 
 @media(max-width: 1200px)
   .brif
+    background-image: url('../../img/brif-color-bg.png'), url('../../img/brif-bg.jpg')
+    background-position: left center, center right
+    background-size: 50%, 50% 100%
+    background-repeat: repeat-y ,no-repeat
+    &__button
+      margin-left: auto
+      margin-right: auto
     &__form
       padding-left: 30px
+    &__input
+      margin-left: auto
+      margin-right: auto
   .interview
     padding-left: 30px
+    padding-right: 35px
     &__titile
       font-size: 20px
       margin-bottom: 15px
@@ -85,6 +97,7 @@
         max-width: 300px
       &__counter
         margin-right: 20px
+
   .form
     &__title
       font-size: 20px
@@ -100,5 +113,6 @@
     background-repeat: repeat-x ,no-repeat
     &-block
       flex-direction: column
-    // &__form
-    //   margin-top: 60px
+    &__form
+      margin-top: 60px
+
