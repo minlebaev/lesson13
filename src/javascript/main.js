@@ -9,3 +9,9 @@ button.addEventListener('click', function() {
 close.addEventListener('click', function(){
   modal.classList.remove('modal_active');
 });
+
+var reviews = $('.reviews');
+var reviewTop = reviews.offset().top;
+$(window).scroll(function(){
+
+});

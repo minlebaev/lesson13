@@ -3,7 +3,7 @@
 body
     +reg
 img
-    min-width: 100
+    max-width: 100%
 .container
     max-width: 1170px
     margin: auto
@@ -12,14 +12,26 @@ img
         // max-width: 100%
         padding-left: 62px
         padding-right: 62px
+@media(max-width: 870px)
+    .container
+        // max-width: 100%
+        padding-left: 42px
+        padding-right: 42px
+
 @media(max-width: 768px)
     .container
         // max-width: 100%
-        padding-left: 62px
-        padding-right: 62px
+        padding-left: 25px
+        padding-right: 25px
     .section
         padding-top: 60px
         padding-bottom: 60px
+@media(max-width: 420px)
+    .container
+        // max-width: 100%
+        padding-left: 25px
+        padding-right: 25px
+
 
 
 .button
@@ -27,6 +39,7 @@ img
     background-color: $main-color
     border: none
     padding: 18px 30px
+    +bold
     &:hover
         background-color: lighten($main-color, 10%)
         cursor: pointer
@@ -58,3 +71,18 @@ img
     &__image
         margin: auto
     
+@media(max-width: 420px)
+    .container
+        padding-left: 25px
+        padding-right: 25px
+    .section
+        padding: 50px 0
+        &-title
+            font-size: 18px
+            margin-bottom: 20px
+            line-height: 25px
+        &-subtitle
+            font-size: 14px
+            margin-bottom: 27px
+    .button
+        padding: 18px 62px
